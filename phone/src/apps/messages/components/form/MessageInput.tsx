@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Paper, Box, Button } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
-import ImageIcon from '@mui/icons-material/Image';
+import IosShareIcon from '@mui/icons-material/IosShare';
 import { TextField } from '@ui/components/Input';
 import { useMessageAPI } from '../../hooks/useMessageAPI';
 
@@ -49,7 +49,7 @@ const MessageInput = ({ messageConversationId, onAddImageClick }: IProps) => {
       </Box>
       <Box>
         <Button onClick={onAddImageClick}>
-          <ImageIcon />
+          <IosShareIcon />
         </Button>
         <Button onClick={handleSubmit}>
           <SendIcon />
